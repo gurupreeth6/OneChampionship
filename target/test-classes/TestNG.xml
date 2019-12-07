@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="onechampionship_assignment" thread-count="2" verbose="1" parallel="classes">
+    <listeners>
+        <listener class-name="utils.Reporting"></listener>
+    </listeners>
+
+    <test name="One championship test">
+        <parameter name="device" value="android"/>
+        <classes>
+            <class name="appCases.TC_OneChampionshipHome_001"></class>
+        </classes>
+    </test>
+
+</suite>
